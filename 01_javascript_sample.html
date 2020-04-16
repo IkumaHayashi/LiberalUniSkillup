@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>サンプル</title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+  <script lang="text/javascript">
+    function ClickButton(buttonKind) {
+      const haveImage = document.getElementById('have5Power');
+      const notHaveImage = document.getElementById('notHave5Power');
+      if(buttonKind == 'have5Power'){
+        haveImage.style.display = 'block';
+        notHaveImage.style.display = 'none';
+      } else {
+        notHaveImage.style.display = 'block';
+        haveImage.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Begin page content -->
+  <main role="main" class="container">
+    <h1 class="mt-5 mb-5">JavaScriptサンプル</h1>
+    <p class="lead">あなたは５つの力、持ってますか？</p>
+    <button type="button" class="btn btn-outline-primary" onclick="ClickButton('have5Power');">はい</button>
+    <button type="button" class="btn btn-outline-danger" onclick="ClickButton('notHave5Power');">いいえ</button>
+
+    <div class="row mt-5">
+      <div class="col-sm-4">
+      <figure class="figure" id="have5Power" style="display: none;">
+        <img src="https://liberaluni.com/wp-content/uploads/2018/04/191003itutunotikara2.png" class="figure-img img-fluid rounded" >
+      </figure>
+      <figure class="figure" id="notHave5Power" style="display: none;">
+        <img src="https://liberaluni.com/wp-content/uploads/2018/04/191003itutunotikara3.png" class="figure-img img-fluid rounded" >
+      </figure>
+    </div>
+  </div>
+  </main>
+</body>
+</html>
