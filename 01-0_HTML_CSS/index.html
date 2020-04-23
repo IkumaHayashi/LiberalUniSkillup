@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>プロフィールページ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#profile">基本情報</a></li>
+      <li><a href="#tameru">貯める力</a></li>
+      <li><a href="#kasegu">稼ぐ力</a></li>
+      <li><a href="#tukau">使う力</a></li>
+      <li><a href="#huyasu">増やす力</a></li>
+      <li><a href="#mamoru">守る力</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="profile">
+      <h1>いくま</h1>
+      <img src="img/avator.png" height="100" alt="プロフィール画像">
+      <p><strong>30歳Webエンジニア</strong></p>
+      <p>学生のときからプログラミングの勉強を始め、新卒でSIerに就職し7年間働いた後、どうしてもプログラミングがやりたくて自社開発企業に転職しました。</p>
+    </section>
+    <section class="5powers">
+      <h2>5つの力</h2>
+      <p>私はそれぞれ下記を実践しています。</p>
+      <article id="tameru">
+        <h3>貯める力</h3>
+        <ol>
+          <li>不要な保険の解約</li>
+          <li>格安SIMへの切り替え</li>
+          <li>ふるさと納税の利用</li>
+        </ol>
+      </article>
+      <article id="kasegu">
+        <h3>稼ぐ力</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>副業</th>
+              <th>月収</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>せどり</td>
+              <td>5万円</td>
+            </tr>
+            <tr>
+              <td>ブログ</td>
+              <td>5000円</td>
+            </tr>
+            <tr>
+              <td>プログラミング</td>
+              <td>2万円</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <article id="tukau">
+        <h3>使う力</h3>
+        <p>買ったものと感想</p>
+        <p>
+          買ったもの：<input type="text" value="食器洗浄機">
+        </p>
+        <p>
+          感想：<textarea  type="text" rows="8" cols="100">食器洗い乾燥機 NP-TH2を購入しました。洗い物がたくさんあってもげんなりすることがなくなりました。食後すぐに軽くお湯で流してから食洗機に入れて、洗剤を入れてスイッチを押すだけなのでめちゃくちゃ時短になってます。
+          </textarea>
+        </p>
+
+      </article>
+      <article id="huyasu">
+        <h3>増やす力</h3>
+        私のアセットアロケーションを紹介します。
+        <table>
+          <thead>
+            <tr>
+              <th>アセットクラス</th>
+              <th>投資割合</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <select>
+                  <option value="1" selected>日本株式</option>
+                  <option value="2">日本債券</option>
+                  <option value="3">日本ETF</option>
+                  <option value="4">日本投資信託</option>
+                  <option value="5">米国株式</option>
+                  <option value="6">米国債券</option>
+                  <option value="7">米国ETF</option>
+                  <option value="8">米国投資信託</option>
+                </select>
+              </td>
+              <td><input type="number" value="10">%</td>
+            </tr>
+            <tr>
+              <td>
+                <select>
+                  <option value="1">日本株式</option>
+                  <option value="2">日本債券</option>
+                  <option value="3">日本ETF</option>
+                  <option value="4" selected>日本投資信託</option>
+                  <option value="5">米国株式</option>
+                  <option value="6">米国債券</option>
+                  <option value="7">米国ETF</option>
+                  <option value="8">米国投資信託</option>
+                </select>
+              </td>
+              <td><input type="number" value="30">%</td>
+            </tr>
+            <tr>
+              <td>
+                <select>
+                  <option value="1">日本株式</option>
+                  <option value="2">日本債券</option>
+                  <option value="3">日本ETF</option>
+                  <option value="4">日本投資信託</option>
+                  <option value="5">米国株式</option>
+                  <option value="6">米国債券</option>
+                  <option value="7" selected>米国ETF</option>
+                  <option value="8">米国投資信託</option>
+                </select>
+              </td>
+              <td><input type="number" value="30">%</td>
+            </tr>
+            <tr>
+              <td>
+                <select>
+                  <option value="1">日本株式</option>
+                  <option value="2">日本債券</option>
+                  <option value="3">日本ETF</option>
+                  <option value="4">日本投資信託</option>
+                  <option value="5">米国株式</option>
+                  <option value="6">米国債券</option>
+                  <option value="7">米国ETF</option>
+                  <option value="8" selected>米国投資信託</option>
+                </select>
+              </td>
+              <td><input type="number" value="30">%</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <article id="mamoru">
+        <h3>守る力</h3>
+        <input type="checkbox" value="1" checked>ポンジスキームについて理解している
+        <input type="checkbox" value="1" checked>世界最高投資家のウォーレンバフェットの平均利回りがわかる
+        <input type="checkbox" value="1" checked>銀行の窓口で投資商品は買わない
+        <input type="checkbox" value="1">大富豪の7つの教えを全て答えられる
+      </article>
+    </section>
+  </main>
+  <footer>
+  	<p>© リベラルアーツ大学：スキルアップチャンネル All rights reserved.</p>
+  </footer>
+</body>
+</html>
