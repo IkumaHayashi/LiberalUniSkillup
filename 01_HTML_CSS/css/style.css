@@ -8,12 +8,6 @@ body {
 header {
   background-color: #5d8ac1;
 }
-main {
-  width: 560px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
 nav{
   text-align: center;
   padding: 10px;
@@ -35,17 +29,27 @@ nav ul li a{
 nav ul li a:hover{
   color: #beceed;
 }
+main {
+  width: 720px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  padding: 48px;
+}
 footer p {
   text-align: center;
   font-size: 14px;
   margin-top: 50px;
   margin-bottom: 30px;
+  color: gray;
 }
 
 .profile {
   display: flex;
-  margin-top: 64px;
-  margin-bottom: 64px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   align-items: center;
 }
 
@@ -66,4 +70,46 @@ footer p {
   font-weight: normal;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.five-powers {
+  background-color: white;
+}
+.five-powers h3 {
+  background-color: #4daec1;
+  color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.tameru ol {
+  background-color: #e1eff4;
+  border-color: #587c82;
+  padding-left: 36px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #1e73be;
+  font-size: 18px;
+}
+.tameru ol li {
+  padding-bottom: 6px;
+  padding-top: 6px;
+  font-weight: 700;
+}
+.kasegu table {
+  width: 500px;
+}
+.kasegu table thead {
+  background-color: #ecf8ff;
+  font-weight: 700;
+}
+.kasegu table tr td:nth-of-type(2){
+  text-align: right;
+}
+.kasegu table th,td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
