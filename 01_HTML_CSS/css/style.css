@@ -38,6 +38,30 @@ main {
 section {
   padding: 48px;
 }
+table {
+  width: 500px;
+  margin: auto;
+  border-collapse: collapse;
+  border: solid 1px #b1b1b1;
+}
+table th, table td {
+  border: solid 0.5px #b1b1b1;
+}
+table thead {
+  background-color: #ecf8ff;
+  font-weight: 700;
+}
+table th,td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+select {
+  width: 100%;
+  border-radius: 2px;
+  padding: 8px 48px 8px 8px;
+}
 footer p {
   text-align: center;
   font-size: 14px;
@@ -45,14 +69,16 @@ footer p {
   margin-bottom: 30px;
   color: gray;
 }
-
+.subtitle {
+  font-size: 16px;
+  margin-left: 16px;
+}
 .profile {
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
   align-items: center;
 }
-
 .avator img {
   background-color: #fff;
   border-radius: 50%;
@@ -60,22 +86,18 @@ footer p {
   border-style: solid;
   border-color: #fff;
 }
-
-
 .introduction {
   margin-left: 32px;
 }
-
 .introduction h2 {
   font-weight: normal;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
 .five-powers {
   background-color: white;
 }
-.five-powers h3 {
+.five-powers h2 {
   background-color: #4daec1;
   color: #fff;
   padding-top: 12px;
@@ -97,19 +119,38 @@ footer p {
   padding-top: 6px;
   font-weight: 700;
 }
-.kasegu table {
-  width: 500px;
-}
-.kasegu table thead {
-  background-color: #ecf8ff;
-  font-weight: 700;
-}
 .kasegu table tr td:nth-of-type(2){
   text-align: right;
 }
-.kasegu table th,td {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 18px;
-  padding-right: 18px;
+.tukau {
+  display: inline-block;
+  width: 100%;
+}
+.tukau input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-family : inherit;
+}
+.tukau textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-family : inherit;
+}
+.fuyasu tr td input[type="number"] {
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding: 8px 0px 8px 8px;
+  text-align: right;
+}
+.mamoru-check {
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
