@@ -2,12 +2,13 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="5つの力に特化したプロフィールページです。">
     <title>プロフィールページ</title>
+    <meta name="description" content="5つの力に特化したプロフィールページです。">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body>
+    <!-- 上部ナビメニュー -->
     <header>
       <nav>
         <ul>
@@ -20,30 +21,40 @@
         </ul>
       </nav>
     </header>
+    
+    <!-- メインコンテンツ -->
     <main>
+      <!-- 自己紹介部分 -->
       <section id="profile">
         <div class="profile">
           <div class="avator">
             <img src="img/avator.png" height="100" alt="プロフィール画像">
           </div>
           <div class="introduction">
-            <h1>いくま</h2>
+            <h1>いくま</h1>
             <p>30歳Webエンジニアです。学生のときからプログラミングの勉強を始め、新卒でSIerに就職し7年間働いた後、どうしてもプログラミングがやりたくて自社開発企業に転職しました。</p>
           </div>
         </div>
       </section>
+      <!-- 5つの力部分 -->
       <section class="five-powers">
-        <h1>5つの力<span class="subtitle">～それぞれのレベル～</span></h1>
+        <h2>5つの力<span class="subtitle">～それぞれのレベル～</span></h2>
+        
+        <!-- 各種力のマークアップ -->
+        <!-- 今回は初心者向けの説明のため、class名は日本語表記（tameruやfuyasu）になっていますが、実際の現場では英語表記が圧倒的に好まれます -->
+        <!-- 貯める力 -->
         <article id="tameru" class="tameru">
-          <h2>貯める力<span class="subtitle">～実践したこと～</span></h2>
+          <h3>貯める力<span class="subtitle">～実践したこと～</span></h3>
           <ol>
             <li>不要な保険の解約</li>
             <li>格安SIMへの切り替え</li>
             <li>ふるさと納税の利用</li>
           </ol>
         </article>
+
+        <!-- 稼ぐ力 -->
         <article id="kasegu" class="kasegu">
-          <h2>稼ぐ力<span class="subtitle">～実践している副業とその収入～</span></h2>
+          <h3>稼ぐ力<span class="subtitle">～実践している副業とその収入～</span></h3>
           <table>
             <thead>
               <tr>
@@ -54,34 +65,23 @@
             <tbody>
               <tr>
                 <td>せどり</td>
-                <td>\50,000</td>
+                <td>&yen;50,000</td>
               </tr>
               <tr>
                 <td>ブログ</td>
-                <td>\5,000</td>
+                <td>&yen;5,000</td>
               </tr>
               <tr>
                 <td>プログラミング</td>
-                <td>\20,000</td>
+                <td>&yen;20,000</td>
               </tr>
             </tbody>
           </table>
         </article>
-        <article id="tukau">
-          <h2>使う力<span class="subtitle">～買ったものと感想～</span></h2>
-          <div class="tukau">
-            <label for="item">
-              買ったもの
-              <input type="text" value="食器洗浄機" id="item">
-            </label>
-            <label for="impression">
-              感想
-              <textarea  type="text" rows="8" cols="100" id="impression">食器洗い乾燥機 NP-TH2を購入しました。洗い物がたくさんあってもげんなりすることがなくなりました。食後すぐに軽くお湯で流してから食洗機に入れて、洗剤を入れてスイッチを押すだけなのでめちゃくちゃ時短になってます。</textarea>
-            </label>
-          </div>
-        </article>
+
+        <!-- 増やす力 -->
         <article id="fuyasu">
-          <h2>増やす力<span class="subtitle">～アセットアロケーション～</span></h2>
+          <h3>増やす力<span class="subtitle">～アセットアロケーション～</span></h3>
           <table class="fuyasu">
             <thead>
               <tr>
@@ -153,24 +153,41 @@
             </tbody>
           </table>
         </article>
+
+        <!-- 守る力 -->
         <article id="mamoru">
-          <h2>守る力<span class="subtitle">～理解度チェック～</span></h2>
+          <h3>守る力<span class="subtitle">～理解度チェック～</span></h3>
           <div class="mamoru">
             <div class="mamoru-check">
               <input type="checkbox" value="1" checked>ポンジスキームについて理解している
             </div>
             <div class="mamoru-check">
-            <input type="checkbox" value="2" checked>世界最高投資家のウォーレンバフェットの平均利回りがわかる
-          </div>
-          <div class="mamoru-check">
-            <input type="checkbox" value="3" checked>銀行の窓口で投資商品は買わない
-          </div>
-          <div class="mamoru-check">
-            <input type="checkbox" value="4">大富豪の7つの教えを全て答えられる
-          </div>
-          <div class="mamoru-check">
+              <input type="checkbox" value="2" checked>世界最高投資家のウォーレンバフェットの平均利回りがわかる
+            </div>
+            <div class="mamoru-check">
+              <input type="checkbox" value="3" checked>銀行の窓口で投資商品は買わない
+            </div>
+            <div class="mamoru-check">
+              <input type="checkbox" value="4">大富豪の7つの教えを全て答えられる
+            </div>
           </div>
         </article>
+
+        <!-- 使う力 -->
+        <article id="tukau">
+          <h3>使う力<span class="subtitle">～買ったものと感想～</span></h3>
+          <div class="tukau">
+            <label for="item">
+              買ったもの
+              <input type="text" value="食器洗浄機" id="item">
+            </label>
+            <label for="impression">
+              感想
+              <textarea  type="text" rows="8" cols="100" id="impression">食器洗い乾燥機 NP-TH2を購入しました。洗い物がたくさんあってもげんなりすることがなくなりました。食後すぐに軽くお湯で流してから食洗機に入れて、洗剤を入れてスイッチを押すだけなのでめちゃくちゃ時短になってます。</textarea>
+            </label>
+          </div>
+        </article>
+        
       </section>
     </main>
     <footer>

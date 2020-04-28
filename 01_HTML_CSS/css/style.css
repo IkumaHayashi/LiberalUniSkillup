@@ -1,3 +1,6 @@
+/**
+ *  共通のスタイルはタグに適用する
+ */
 body {
   font-family: 游ゴシック体, "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", FontAwesome, sans-serif;
   line-height:25px;
@@ -42,20 +45,17 @@ table {
   width: 500px;
   margin: auto;
   border-collapse: collapse;
-  border: solid 1px #b1b1b1;
 }
 table th, table td {
   border: solid 0.5px #b1b1b1;
-}
-table thead {
-  background-color: #ecf8ff;
-  font-weight: 700;
-}
-table th,td {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
+}
+table thead {
+  background-color: #ecf8ff;
+  font-weight: 700;
 }
 select {
   width: 100%;
@@ -69,13 +69,16 @@ footer p {
   margin-bottom: 30px;
   color: gray;
 }
-.five-powers h1 {
-  border-bottom: dashed 2px #6594e0;
-}
+
+/**
+ *  個別のスタイルはクラスに適用する
+ */
+ /* 共通のクラス */
 .subtitle {
   font-size: 16px;
   margin-left: 16px;
 }
+/* 自己紹介部分のクラス */
 .profile {
   display: flex;
   margin-top: 20px;
@@ -92,29 +95,27 @@ footer p {
 .introduction {
   margin-left: 32px;
 }
-.introduction h2 {
+.introduction h3 {
   font-weight: normal;
   margin-top: 5px;
   margin-bottom: 5px;
 }
+/* 5つの力部分のクラス */
 .five-powers {
   background-color: white;
 }
-.five-powers h2 {
+.five-powers h3 {
   background-color: #4daec1;
   color: #fff;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 12px 20px;
 }
+/* 貯める力のクラス */
 .tameru ol {
   background-color: #e1eff4;
-  border-color: #587c82;
   padding-left: 36px;
   padding-top: 16px;
   padding-bottom: 16px;
-  color: #1e73be;
+  color: #449e61;
   font-size: 18px;
 }
 .tameru ol li {
@@ -122,29 +123,11 @@ footer p {
   padding-top: 6px;
   font-weight: 700;
 }
+/* 稼ぐ力のクラス */
 .kasegu table tr td:nth-of-type(2){
   text-align: right;
 }
-.tukau {
-  display: inline-block;
-  width: 100%;
-}
-.tukau input[type="text"] {
-  width: 100%;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  appearance: none;
-  font-family : inherit;
-}
-.tukau textarea {
-  width: 100%;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  appearance: none;
-  font-family : inherit;
-}
+/* 増やす力のクラス */
 .fuyasu tr td input[type="number"] {
   width: 100%;
   border-radius: 2px;
@@ -152,8 +135,33 @@ footer p {
   padding: 8px 0px 8px 8px;
   text-align: right;
 }
+/* 増やす力のクラス */
+.tukau label[for="item"] {
+  margin-bottom: 15px;
+  display: block;
+}
+/* 守る力のクラス */
 .mamoru-check {
   width: 100%;
   padding-top: 2px;
   padding-bottom: 2px;
+}
+/* 使う力のクラス */
+.tukau input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family : inherit;
+  font-size: 15px;
+}
+.tukau textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family : inherit;
+  font-size: 15px;
 }
